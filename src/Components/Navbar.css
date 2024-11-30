@@ -1,0 +1,51 @@
+/* Basic styles for navbar container */
+.tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333; /* Dark background for the navbar */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for individual links */
+  .link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover effect for links */
+  .link:hover {
+    color: #4CAF50; /* Green color when hovered */
+    transform: scale(1.05); /* Slight scale effect */
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .tags {
+      flex-direction: column; /* Stack the links vertically on smaller screens */
+      align-items: flex-start;
+    }
+  
+    .link {
+      margin: 10px 0; /* Adjust the margin for vertical spacing */
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tags {
+      padding: 10px;
+    }
+  
+    .link {
+      font-size: 16px; /* Slightly smaller font size on mobile */
+      margin: 8px 0;
+    }
+  }
+  

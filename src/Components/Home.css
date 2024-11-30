@@ -1,0 +1,148 @@
+/* Basic layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  /* List styling */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+  }
+  
+  li {
+    margin: 10px;
+  }
+  
+  /* User link styling */
+  .user {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .user:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .user {
+      width: 80%;
+      margin: 5px 0;
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    .user {
+      width: 90%;
+      padding: 14px;
+    }
+  }
+  
+  /* General layout and text styles */
+.details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.details div {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Loading state styles */
+div.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .details {
+    padding: 15px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .details {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
